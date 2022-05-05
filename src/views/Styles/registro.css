@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+header {
+
+    width: 100%;
+    height: 70px;
+
+
+}
+
+
+ nav {
+
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    border-bottom: 7px solid blue; /* borde del menu de la navegacion */
+position: statics;
+
+}
+
+header nav .navegacion {
+
+    width: auto;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border-color: aqua;
+
+}
+
+
+header nav .navegacion a {
+
+    color: black;
+    margin: 50px;
+    text-decoration: none;
+
+}
+
+.imagen{
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 40px;
+    height: 400px;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+
+.formulario{
+
+    
+margin-top: 137px;
+height: 400px;
+width: 700px;
+padding-left: 220px;
+}
+
+footer{
+    height: 50px;
+}

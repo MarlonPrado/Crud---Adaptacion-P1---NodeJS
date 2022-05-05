@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Nutricion</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://kit.fontawesome.com/0a7a31bd42.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/registro.css">
+</head>
+
+<body>
+
+  <style>
+    * {
+      font-family: 'PT Sans', sans-serif;
+    }
+  </style>
+
+  <header>
+
+    <nav class="">
+
+      <ul class=" navegacion  ">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.html"> Registrar Datos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estadistica.html"> Estadisticas </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="CalcularImc"> CalcularImc </a>
+        </li>
+      </ul>
+
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="mt-10 sm:mt-0">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <div class="px-10 sm:px-0">
+                <h3 class="text-lg font-medium leading- text-red-500"> Registro de Datos </h3>
+                <img src="imagenes/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg" alt="" class="imagen">
+              </div>
+            </div>
+
+            <div class="formulario">
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="#" method="POST">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                  <div class="px-4 py-5 bg-white sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700"> Nombre completo  </label>
+                        <input type="text" name="nombre" id="nombre" autocomplete="nombre-name"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="country" class="block text-sm font-medium text-gray-700">Cargo que desempeña</label>
+                        <select id="cargo" name="cargo" autocomplete="cargo-name"
+                          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <option value=""> Gerente </option>
+                          <option value=""> Subgerente  </option>
+                          <option value="">  líder </option>
+                          <option value=""> técnico </option>
+                          <option value=""> profesional </option>
+                          <option value="">  operario </option>
+                          <option value=""> servicios  </option>
+                          <option value="">  operario </option>
+                          <option value=""> varios</option>
+                        </select>
+                      </div>
+
+            
+                      <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label for="city" class="block text-sm font-medium text-gray-700">  Edad del empleado</label>
+                        <input type="number" name="edad" id="edad" autocomplete="edad-level2"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <label for="region" class="block text-sm font-medium text-gray-700"> Peso del empleado </label>
+                        <input type="number" name="peso" id="peso" autocomplete="peso-level1"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <label for="postal-code" class="block text-sm font-medium text-gray-700"> Altura del empleado </label>
+                        <input type="altura" name="altura" id="altura" autocomplete="altura"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                    <button type="submit"
+                      class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"> Guardar </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="text-white bg-black w-full flex items-center">
+      <div class=" w-4/5 mx-auto flex justify-between">
+        <p class="">2022 Copyright | Derechos de autor Brayan Garcia</p>
+        <div>
+          <a href="https://github.com">github</a>
+          <i class="fa-brands fa-github">
+          </i>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
