@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Boostrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/0a7a31bd42.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.ejs">
+    <%- include('./Styles/style.ejs'); %>
+</head>
+
+<body>
+
+    <style>
+        * {
+            font-family: 'PT Sans', sans-serif;
+        }
+    </style>
+
+    <header>
+
+        <nav class="">
+
+            <ul class=" navegacion  ">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html"> Registrar Datos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estadistica.html"> Estadisticas </a>
+                </li>
+            </ul>
+
+            </ul>
+        </nav>
+        
+        <main>
+         <img src="IMC.jpg" alt="">
+        </main>
+
+        <footer class="text-white bg-black w-full flex items-center">
+            <div class=" w-4/5 mx-auto flex justify-between">
+                <p class="">2022 Copyright | Derechos de autor Brayan Garcia</p>
+                <div>
+                    <a href="https://github.com">github</a>
+                    <i class="fa-brands fa-github">
+                    </i>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

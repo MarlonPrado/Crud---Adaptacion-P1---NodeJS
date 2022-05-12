@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Nutricion</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://kit.fontawesome.com/0a7a31bd42.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+
+  <%- include('./Styles/registro.ejs'); %>
+  
+  
+</head>
+
+<body>
+
+  <style>
+    * {
+      font-family: 'PT Sans', sans-serif;
+    }
+    table, th,td{
+      
+      border: 1px solid black;
+      border-collapse: collapse ;
+    }
+
+    th{
+      padding: 10px;
+    }
+    tr{
+      text-align: center;
+    }
+    
+    button[value='1'] {
+      background-color: red;
+      border-color: aliceblue;
+    }
+    button[value='2'] {
+      background-color: aqua;
+      border-color: aliceblue;
+    }
+  </style>
+
+  <header>
+
+    <nav class="">
+
+      <ul class=" navegacion  ">
+
+        <li class="nav-item">
+          <a class="nav-link" href="usuarioedit">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.html"> Registrar Datos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estadistica.html"> Estadisticas </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/load"> CalcularImc </a>
+        </li>
+      </ul>
+
+      </ul>
+    </nav>
+
+    <main>
+
+
+
+        <div class="mt-10 sm:mt-0">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <div class="px-10 sm:px-0">
+                <h3 class="text-lg font-medium leading- text-red-500"> Registro de Datos </h3>
+                <img src="https://i.ibb.co/Fx81Y4v/LLena-el-formulario-de-la-derecha-para-registrar-tus-datos-en-la-plataforma-Tambien-puede-actualizar.png" alt="" class="imagen">
+              </div>
+            </div>
+
+            <div class="formulario">
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <form action="/add" method="POST">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                  <div class="px-4 py-5 bg-white sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700"> Nombre completo  </label>
+                        <input type="text" name="nombre" id="nombre" autocomplete="nombre-name"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+
+                      <div class="col-span-6 sm:col-span-3">
+                        <label for="job" class="block text-sm font-medium text-gray-700"> Cargo </label>
+                        <input type="text" name="cargo" id="cargo" autocomplete="cargo-name"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      
+                        
+                    </div>
+
+
+            
+                      <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label for="city" class="block text-sm font-medium text-gray-700">  Edad del empleado</label>
+                        <input type="number" name="edad" id="edad" autocomplete="edad-level2"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <label for="region" class="block text-sm font-medium text-gray-700"> Peso del empleado </label>
+                        <input type="number" name="peso" id="peso" autocomplete="peso-level1"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+                      <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <label for="postal-code" class="block text-sm font-medium text-gray-700"> Altura del empleado </label>
+                        <input type="altura" name="altura" id="altura" autocomplete="altura"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                    <button type="submit"
+                      class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"> Guardar </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Cargo</th>
+          <th>Edad</th>
+          <th>Peso</th>
+          <th>Altura</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <% if  (data) {%>
+          <% for (var i=0; i < data.length; i++)  { %>
+            <tr>
+              
+              <td><%= (i + 1) %></td>
+              <td><%= data[i].nombre %></td>
+              <td><%= data[i].cargo %></td>
+              <td><%= data[i].edad %></td>
+              <td><%= data[i].peso %></td>
+              <td><%= data[i].altura %></td>
+              <td>
+                <a href="/delete/<%= data[i].id %>"  ><button class="btn btn-danger" value='1' >ELIMINAR</button></a>
+                <a href="/update/<%= data[i].id %>"  ><button class="btn btn-info" value='2' >ACTUALIZAR</button></a></td>
+            </tr>
+            <% } %>
+            <% } %>
+      </tbody>
+    </table>
+
+    <footer class="text-white bg-black w-full flex items-center">
+      <div class=" w-4/5 mx-auto flex justify-between">
+        <p class="">2022 Copyright | Desarrollado por: 
+          Brayan Garcia,  
+          Douglas Arley Alvarez, y 
+          Marlon Stiven Prado
+        </p>
+        
+        <div>
+          <a href="https://github.com/MarlonPrado/Crud---Adaptacion-P1---NodeJS">Enlace del github</a>
+          <i class="fa-brands fa-github">
+          </i>
+        </div>
+      </div>
+    </footer>
+</body>
+
+
+</html>

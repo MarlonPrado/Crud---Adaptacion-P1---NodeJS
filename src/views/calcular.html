@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Nutricion</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/0a7a31bd42.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/calcular.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <style>
+        * {
+            font-family: 'PT Sans', sans-serif;
+        }
+    </style>
+
+    <header>
+
+        <nav class="">
+
+            <ul class=" navegacion  ">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html"> Registrar Datos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estadistica.html"> Estadisticas </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CalcularImc"> CalcularImc </a>
+                </li>
+            </ul>
+
+            </ul>
+        </nav>
+        <main>
+            <section class="formularioo">
+
+
+                <div class="w-full max-w-xs">
+                    <form class="bg-gray shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-8">
+                            <label class="block text-red-700 text-sm font-bold mb-2" for="Peso">
+                                Peso
+                            </label>
+                            <input
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                id="peso" type="number" placeholder="">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-red-700 text-sm font-bold mb-2" for="Altura">
+                                altura
+                            </label>
+                            <input
+                                class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                                id="altura" type="number" placeholder="">
+
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                type="button">
+                                calcular
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-white bg-black w-full flex items-center">
+            <div class=" w-4/5 mx-auto flex justify-between">
+                <p class="">2022 Copyright | Derechos de autor Grupo 4 </p>
+                <div>
+                    <a href="https://github.com">github</a>
+                    <i class="fa-brands fa-github">
+                    </i>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
